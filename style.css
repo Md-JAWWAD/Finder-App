@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(black,grey); 
+    /* background-image: url(images/git-github.png); */
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    max-width: 420px; 
+    margin: 0 auto;
+}
+
+.user-box{
+    padding: 30px;
+    display: flex;
+    background: #fff;
+    box-shadow: 0 8.9098px 36.6557px rgb(67 67 67 / 6%);
+    border-radius: 10.9822px;
+}
+
+
+#form input{
+    padding: 12px;
+    border: none;
+    background-color: #F6F6F5;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    min-width: 250px;
+}
+#form input::placeholder{
+    color: #666;
+}
+#form input:focus{
+    outline: none;
+}
+
+.avetar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.user-info{
+    margin-left: 2rem;
+}
+.user-bio{
+	padding: 10px 0px 30px;
+}
+.user-bio a {
+    background-color: #ddd;
+    border-color: #ddd;
+    color: #222;
+    padding: 6px 21px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 13.5px;
+    text-decoration: none;
+    margin-top: 8px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+.user-bio a:hover{
+	background-color: #bd1e26;
+    background: linear-gradient(to right, #bd1e26, #EA0909);
+    color: #ffffff;
+}
+
+.user-info ul.meta-data{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 300px;
+
+}
+.user-info ul.meta-data li{
+    list-style: none;
+}
+
+#userProfile:hover{
+    transform: scale(1.5);
+    transition-duration: 1s;
+}
+
+@media only screen and (max-width: 600px) {
+  .user-box{
+    flex-direction: column;
+  }
+  .avetar{
+  	margin: 0 auto 10px;
+    text-align: center;
+    display: block;
+  }
+  .user-info{
+  	margin-left: 0px;
+  }
+  .user-info ul.meta-data{
+  	width: 100%;
+  }
+}
+
